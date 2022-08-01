@@ -165,7 +165,7 @@ code {
   font-size: .8em;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 400px) {
   .calendar {
     width: 100vw;
     margin: 10em auto;
