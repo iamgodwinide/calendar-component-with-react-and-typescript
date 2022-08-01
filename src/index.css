@@ -11,3 +11,175 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.calendar {
+  width: 400px;
+  margin: 10em auto 0 auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #000;
+}
+
+.header-title-wrap {
+  background-color: #05489b;
+  color: #fff;
+  padding: .5em;
+  margin-bottom: 2em;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.header .month-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30px;
+  padding: 0 1em;
+  margin-bottom: 2em;
+}
+
+.nav-button {
+  color: #fff;
+  background-color: #05489b;
+  padding: 10px;
+  border-radius: 10px;
+  border-width: 0;
+  width: 4em;
+  cursor: pointer;
+  outline: none;
+}
+
+.month {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.month .nav-button {
+  background-color: #05489b;
+}
+
+.week {
+  width: 80%;
+  display: flex;
+}
+
+.day-wrap {
+  width: 100%;
+  margin: 0 2px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  padding: 7px;
+  border: 2px solid transparent;
+  border-radius: 7px;
+}
+
+.day-wrap:hover {
+  background-color: #98c3f8;
+  transition: .5s ease;
+}
+
+.selected {
+  background-color: #7491b4;
+  transition: .5s ease;
+  color: #e7eef5;
+}
+
+.before {
+  color: rgb(38, 38, 38);
+}
+
+.before-month {
+  color: rgba(69, 69, 69, 0.474);
+}
+
+.after-month {
+  color: rgb(107, 15, 161);
+}
+
+.today {
+  border-color: #05489b;
+  color: #05489b;
+}
+
+.notInMonth {
+  color: gray;
+}
+
+
+.jan {
+  color: #ff8000
+}
+
+.feb {
+  color: #ffff00
+}
+
+.mar {
+  color: #ff0080
+}
+
+.apr {
+  color: #00ff80
+}
+
+.may {
+  color: #00ff80
+}
+
+.jun {
+  color: #ffff00
+}
+
+.jul {
+  color: #ff0080
+}
+
+.aug {
+  color: #00ff80
+}
+
+.sep {
+  color: #ffff00
+}
+
+.oct {
+  color: #ff8000
+}
+
+.nov {
+  color: #80ff00
+}
+
+.dec {
+  color: #00ff00
+}
+
+
+.day {
+  font-size: 1.3em;
+}
+
+.day-abbr {
+  font-size: .8em;
+}
+
+@media screen and (max-width: 1024px) {
+  .calendar {
+    width: 100vw;
+    margin: 10em auto;
+  }
+
+  .day-wrap {
+    font-size: .8em;
+  }
+
+  .week {
+    width: 80vw;
+  }
+
+  .day-wrap {
+    width: 5vw;
+  }
+}
